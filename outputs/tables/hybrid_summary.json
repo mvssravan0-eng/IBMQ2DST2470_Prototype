@@ -1,0 +1,11 @@
+{
+  "conf_threshold": 0.6,
+  "anomaly_threshold_95th_pct_normal": 0.4885897845448307,
+  "true_zero_day_correctly_flagged_unknown_rate": 0.31493333333333334,
+  "known_attack_incorrectly_sent_to_unknown_rate": 0.019266762083012222,
+  "normal_traffic_false_alarm_rate": 0.056739779631345896,
+  "hybrid_pipeline_accuracy": 0.7684528034066714,
+  "n_true_zero_day": 3750,
+  "n_known_attacks": 9083,
+  "n_normal": 9711
+}

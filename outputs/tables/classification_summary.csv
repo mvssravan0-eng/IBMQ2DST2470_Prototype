@@ -1,0 +1,7 @@
+task,model,accuracy,precision_macro,recall_macro,f1_macro,f1_weighted
+binary,Decision Tree,0.7775,0.8153,0.8008,0.7767,0.7749
+binary,Random Forest,0.7785,0.8174,0.8022,0.7777,0.7759
+binary,XGBoost,0.797,0.8278,0.8182,0.7967,0.7956
+multiclass,Decision Tree,0.748,0.5834,0.5028,0.4899,0.7042
+multiclass,Random Forest,0.7389,0.765,0.4749,0.4791,0.6916
+multiclass,XGBoost,0.7786,0.8246,0.5573,0.5812,0.7388

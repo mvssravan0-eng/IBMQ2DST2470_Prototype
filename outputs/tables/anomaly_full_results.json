@@ -1,0 +1,29 @@
+[
+  {
+    "model": "Isolation Forest",
+    "roc_auc": 0.942029423181179,
+    "average_precision": 0.9543034767254645,
+    "threshold_95th_pct_normal": 0.4885897845448307,
+    "overall_attack_detection_rate_at_95th_pct": 0.673186316527702,
+    "true_zero_day_detection_rate_at_95th_pct": 0.6314666666666666,
+    "n_true_zero_day_samples": 3750
+  },
+  {
+    "model": "Local Outlier Factor",
+    "roc_auc": 0.8812250241758504,
+    "average_precision": 0.8568322391201799,
+    "threshold_95th_pct_normal": 1.714916680099318,
+    "overall_attack_detection_rate_at_95th_pct": 0.2247331099509078,
+    "true_zero_day_detection_rate_at_95th_pct": 0.17413333333333333,
+    "n_true_zero_day_samples": 3750
+  },
+  {
+    "model": "PCA Reconstruction Error",
+    "roc_auc": 0.9347607879724346,
+    "average_precision": 0.9291817123495721,
+    "threshold_95th_pct_normal": 0.01947769635580746,
+    "overall_attack_detection_rate_at_95th_pct": 0.5462479544923244,
+    "true_zero_day_detection_rate_at_95th_pct": 0.3896,
+    "n_true_zero_day_samples": 3750
+  }
+]

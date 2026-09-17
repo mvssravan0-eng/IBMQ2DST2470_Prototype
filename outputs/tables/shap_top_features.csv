@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+src_bytes,1.2048286
+count,0.90996647
+dst_host_srv_count,0.85385877
+dst_bytes,0.7226125
+dst_host_diff_srv_rate,0.3860725
+dst_host_same_src_port_rate,0.378995
+dst_host_rerror_rate,0.29526466
+logged_in,0.28370276
+dst_host_serror_rate,0.272973
+dst_host_same_srv_rate,0.22198376
+dst_host_count,0.20631084
+service=private,0.20500895
+duration,0.19519635
+service=http,0.16677518
+hot,0.16511227

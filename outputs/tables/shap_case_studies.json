@@ -1,0 +1,29 @@
+[
+  {
+    "case": "Case A - Correctly Caught DoS",
+    "note": "High-confidence correct detection of a known attack type.",
+    "row_index": 40,
+    "true_category": "DoS",
+    "true_attack_type": "neptune",
+    "predicted_category": "DoS",
+    "confidence": 0.9999992847442627
+  },
+  {
+    "case": "Case B - Missed R2L Attack",
+    "note": "R2L attack misclassified -- shows the model's blind spot on rare classes.",
+    "row_index": 7,
+    "true_category": "R2L",
+    "true_attack_type": "guess_passwd",
+    "predicted_category": "Normal",
+    "confidence": 0.994213879108429
+  },
+  {
+    "case": "Case C - True Zero-Day Attack",
+    "note": "attack_type='snmpgetattack' never appeared in KDDTrain+ at all -- shows what the classifier's reasoning looks like on a genuinely novel attack.",
+    "row_index": 1824,
+    "true_category": "R2L",
+    "true_attack_type": "snmpgetattack",
+    "predicted_category": "Normal",
+    "confidence": 0.9999969005584717
+  }
+]
