@@ -981,10 +981,21 @@ else:
     if os.path.exists(fig4_path):
         doc.add_picture(fig4_path, width=Inches(4.5))
 
+    doc.add_page_break()
+
     h2 = doc.add_heading("C. Certificate of Completion", level=2)
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
-    p.add_run("The certificate awarded for successful completion of the IBM Q2B Pearl Internship Program (IBMQ2D Case Study #18, IBM ID: IBMQ2DST2470) will be attached here upon final program issuance.")
+    p.paragraph_format.space_after = Pt(12)
+    p.add_run("The certificate awarded for successful completion of the IBM Q2B Pearl Internship Program in Artificial Intelligence & Machine Learning (IBMQ2D Case Study #18, Application No: IBMQ2DST2470) is included below for reference:")
+
+    cert_path = os.path.join(base_dir, "certificate.png")
+    if os.path.exists(cert_path):
+        p_cert = doc.add_paragraph()
+        p_cert.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_cert.paragraph_format.space_before = Pt(8)
+        p_cert.paragraph_format.space_after = Pt(8)
+        p_cert.add_run().add_picture(cert_path, width=Inches(6.2))
 
     output_path = os.path.join(base_dir, "IBMQ2DST2470_Internship_Case_Study_Report.docx")
     doc.save(output_path)
