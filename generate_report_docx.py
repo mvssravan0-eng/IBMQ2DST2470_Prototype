@@ -99,15 +99,23 @@ def build_document():
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_after = Pt(40)
+    p.paragraph_format.space_after = Pt(15)
     run = p.add_run("V S SRAVAN MALLADI    (A24126552268)")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(13)
     run.bold = True
 
+    logo_path = os.path.join(base_dir, "anits_logo_colored.png")
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(10)
+        p_logo.paragraph_format.space_after = Pt(15)
+        p_logo.add_run().add_picture(logo_path, width=Inches(1.7))
+
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(30)
+    p.paragraph_format.space_before = Pt(10)
     p.paragraph_format.space_after = Pt(4)
     run = p.add_run("DEPARTMENT OF CSE (AI & ML)\n")
     run.font.name = 'Times New Roman'
@@ -158,13 +166,20 @@ def build_document():
     run.font.name = 'Times New Roman'
     run.font.size = Pt(11)
 
-    run = p.add_run("2024–2028\n\n")
+    run = p.add_run("2024–2028\n")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(11)
 
+    if os.path.exists(logo_path):
+        p_logo2 = doc.add_paragraph()
+        p_logo2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo2.paragraph_format.space_before = Pt(8)
+        p_logo2.paragraph_format.space_after = Pt(12)
+        p_logo2.add_run().add_picture(logo_path, width=Inches(1.5))
+
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_after = Pt(24)
+    p.paragraph_format.space_after = Pt(20)
     run = p.add_run("BONAFIDE CERTIFICATE")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(14)
