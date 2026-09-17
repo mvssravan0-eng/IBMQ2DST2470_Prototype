@@ -182,11 +182,11 @@ def build_document():
     run.font.size = Pt(12)
     run.bold = True
 
-    run = p.add_run(" from ")
+    run = p.add_run(" under the ")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
 
-    run = p.add_run("Edunet Foundation in collaboration with AICTE and IBM")
+    run = p.add_run("IBM Q2B Pearl Internship Program (IBMQ2D Case Study #18)")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
     run.bold = True
@@ -195,7 +195,7 @@ def build_document():
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
 
-    run = p.add_run("V S SRAVAN MALLADI (A24126552268)")
+    run = p.add_run("V S SRAVAN MALLADI (A24126552268, IBM ID: IBMQ2DST2470)")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
     run.bold = True
@@ -268,8 +268,8 @@ def build_document():
     p.paragraph_format.line_spacing = 1.3
     p.paragraph_format.space_after = Pt(12)
     p.add_run("I would also like to express my deepest appreciation to ")
-    p.add_run("Edunet Foundation, AICTE, and IBM").bold = True
-    p.add_run(" for offering me the opportunity to undertake this virtual internship program. I am incredibly grateful to my reviewers, mentors, and industry specialists, whose continuous guidance, technical expertise, and support have helped me navigate challenges and enhance my machine learning and cybersecurity skills.")
+    p.add_run("IBM and the IBM Q2B Pearl Program coordinators").bold = True
+    p.add_run(" for offering me the opportunity to undertake this industry internship program. I am incredibly grateful to the IBM mentors and technical specialists, whose continuous guidance, enterprise expertise, and support have helped me navigate challenges and enhance my machine learning and cybersecurity skills.")
 
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
@@ -289,7 +289,7 @@ def build_document():
     p_sig.paragraph_format.line_spacing = 1.15
     p_sig.paragraph_format.space_before = Pt(20)
     p_sig.add_run("V S SRAVAN MALLADI\n").bold = True
-    p_sig.add_run("A24126552268\n")
+    p_sig.add_run("A24126552268 (IBM ID: IBMQ2DST2470)\n")
     p_sig.add_run("Department of CSE (AI & ML)\n")
     p_sig.add_run("ANITS")
 
@@ -313,9 +313,9 @@ def build_document():
         ("   1.3 Importance of AI Technologies in Cybersecurity", "7"),
         ("   1.4 Scope of the Project", "7"),
         ("2. Organization Profile", "8"),
-        ("   2.1 AICTE Virtual Internship Overview", "8"),
-        ("   2.2 Role of Edunet Foundation", "8"),
-        ("   2.3 IBM as the Industry / Technology Partner", "8"),
+        ("   2.1 Overview of IBM (International Business Machines)", "8"),
+        ("   2.2 IBM Q2B Pearl Program & AI Track", "8"),
+        ("   2.3 IBM Enterprise Security & Threat Intelligence", "8"),
         ("3. Project Overview", "10"),
         ("   3.1 Title of the Project", "10"),
         ("   3.2 Problem Statement", "10"),
@@ -390,14 +390,14 @@ def build_document():
     p.add_run("This report highlights my learning experience and project deliverables from a four-week virtual internship, completed as part of the academic requirements for the ")
     p.add_run("Bachelor of Technology in Computer Science and Engineering (AI & ML)").bold = True
     p.add_run(" at Anil Neerukonda Institute of Technology and Sciences (ANITS). The internship was offered under the ")
-    p.add_run("AICTE–Edunet Foundation Internship Program in collaboration with IBM").bold = True
+    p.add_run("IBM Q2B Pearl Internship Program (IBMQ2D Case Study #18, UG Level 2)").bold = True
     p.add_run(", focusing on ")
-    p.add_run("“Cybersecurity Network Threat & Intrusion Profiler (IBMQ2D Case Study #18)”.").bold = True
+    p.add_run("“Cybersecurity Network Threat & Intrusion Profiler”.").bold = True
 
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
     p.paragraph_format.space_after = Pt(8)
-    p.add_run("The internship framework combined structured project-based learning with industry mentorship. Its core mission was to bridge the gap between theoretical classroom concepts in machine learning and practical, high-stakes challenges in cybersecurity. Through this initiative, AICTE and Edunet Foundation provided the academic and operational scaffolding, while IBM provided technical alignment with enterprise security frameworks.")
+    p.add_run("The IBM Q2B Pearl framework combined structured project-based learning with industry-aligned technical evaluation. Its core mission was to bridge the gap between theoretical classroom concepts in machine learning and enterprise challenges in modern cybersecurity. Through this initiative, IBM provided direct industry problem definitions, architectural expectations, and enterprise threat intelligence frameworks.")
 
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
@@ -451,39 +451,41 @@ def build_document():
     h1.paragraph_format.space_before = Pt(12)
     h1.paragraph_format.space_after = Pt(8)
 
-    h2 = doc.add_heading("2.1 AICTE Virtual Internship Overview", level=2)
+    h2 = doc.add_heading("2.1 Overview of IBM (International Business Machines Corporation)", level=2)
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
     p.paragraph_format.space_after = Pt(8)
-    p.add_run("The All India Council for Technical Education (AICTE), as the statutory body for technical education under the Ministry of Education, Government of India, provides the institutional backbone for student internships. The AICTE Internship Portal facilitates structured, industry-recognized learning opportunities that bridge classroom curricula with emerging technologies (Industry 4.0), equipping undergraduate engineering students with direct practical experience.")
+    p.add_run("International Business Machines Corporation (IBM) is a global leader in hybrid cloud technology, enterprise artificial intelligence, and enterprise-grade cybersecurity solutions. With a rich history spanning over a century, IBM operates in more than 175 countries, driving innovations across data science, quantum computing, and information security. Enterprise solutions like IBM QRadar SIEM, Cloud Pak for Security, and Guardium are benchmarks in security operations centers worldwide.")
 
-    h2 = doc.add_heading("2.2 Role of Edunet Foundation", level=2)
+    h2 = doc.add_heading("2.2 IBM Q2B Pearl Program & Artificial Intelligence Initiative", level=2)
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
     p.paragraph_format.space_after = Pt(8)
-    p.add_run("Edunet Foundation is a non-profit social enterprise dedicated to empowering youth through technical education, institutional capacity building, and digital skills programs. Serving as the primary operational partner, Edunet curates curriculum content, conducts masterclasses, manages weekly milestone evaluations, and guides students in translating high-level concepts into working codebases.")
+    p.add_run("The IBM Q2B Pearl initiative is an intensive, project-driven technical program designed to cultivate engineering excellence in foundational and advanced AI disciplines. Under this program, undergraduate students are tasked with solving authentic industrial case studies, mastering applied machine learning architectures, data hygiene standards, and model explainability to prepare them for enterprise AI deployment.")
 
-    h2 = doc.add_heading("2.3 IBM as the Industry / Technology Partner", level=2)
+    h2 = doc.add_heading("2.3 IBM Enterprise Security & Threat Intelligence Alignment", level=2)
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
     p.paragraph_format.space_after = Pt(8)
-    p.add_run("IBM (International Business Machines Corporation) is a global leader in hybrid cloud, enterprise artificial intelligence, and enterprise cybersecurity solutions (e.g., IBM QRadar SIEM, Cloud Pak for Security). Through the IBM SkillsBuild and Q2D initiative, IBM sponsors real-world project tracks, providing industry problem definitions, architectural guidelines, and evaluation rubrics to cultivate enterprise-ready engineering talent.")
+    p.add_run("In modern Security Operations Centers (SOCs), triaging vast volumes of telemetry requires tight alignment between automated threat classification and human escalation paths. This project directly mirrors the detection paradigms used in IBM security systems: automating known malicious signature handling while applying anomaly profiling to flag zero-day vectors for Tier-2 analyst intervention.")
 
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(10)
     p.paragraph_format.space_after = Pt(4)
-    p.add_run("Logistical and Operational Details of the Internship:").bold = True
+    p.add_run("Logistical and Operational Details of the IBM Q2B Pearl Internship:").bold = True
 
     org_table_data = [
         ("Aspect", "Details"),
-        ("Program Name", "AICTE – Edunet Foundation Virtual Internship in AI & Cybersecurity"),
-        ("Partners", "AICTE, Edunet Foundation, IBM (SkillsBuild / IBMQ2D)"),
-        ("Student Details", "V S Sravan Malladi (A24126552268), Department of CSE (AI & ML), ANITS"),
-        ("Project Opted", "IBMQ2D Case Study #18: Cybersecurity Network Threat & Intrusion Profiler"),
-        ("Duration", "4 Weeks (Intensive Virtual Mode)"),
-        ("Mode", "Fully Online (Project-Based, Mentor-Guided)"),
-        ("Core Tools", "Python 3.12, scikit-learn, XGBoost, SHAP, Joblib, Streamlit, Matplotlib"),
-        ("Primary Deliverables", "Modular Python Pipeline, Pretrained Serialized Models, Web App, Technical Report")
+        ("Program Name", "IBM Q2B Pearl Internship Program (AI & Machine Learning Track)"),
+        ("Sponsoring Organization", "IBM (International Business Machines Corporation)"),
+        ("Student Name", "V S Sravan Malladi"),
+        ("Roll Number", "A24126552268"),
+        ("IBM Student ID", "IBMQ2DST2470"),
+        ("Department & College", "Department of CSE (AI & ML), ANITS (Autonomous), Visakhapatnam"),
+        ("Project Case Study", "IBMQ2D Case Study #18: Cybersecurity Network Threat & Intrusion Profiler"),
+        ("Level & Module", "UG Level 2 — Module 6: Artificial Intelligence and Machine Learning"),
+        ("Core Stack", "Python 3.12, scikit-learn, XGBoost, SHAP, Joblib, Streamlit"),
+        ("Primary Deliverables", "Modular Python Pipeline, Serialized Joblib Models, Web App, Technical Report")
     ]
     tbl_org = doc.add_table(rows=len(org_table_data), cols=2)
     tbl_org.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -967,11 +969,12 @@ else:
     h2 = doc.add_heading("C. Certificate of Completion", level=2)
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
-    p.add_run("The certificate awarded for successful completion of the AICTE – Edunet Foundation Virtual Internship in collaboration with IBM will be attached here upon final program issuance.")
+    p.add_run("The certificate awarded for successful completion of the IBM Q2B Pearl Internship Program (IBMQ2D Case Study #18, IBM ID: IBMQ2DST2470) will be attached here upon final program issuance.")
 
-    output_path = os.path.join(base_dir, "Cybersecurity_Threat_Profiler_Internship_Report.docx")
+    output_path = os.path.join(base_dir, "IBMQ2DST2470_Internship_Case_Study_Report.docx")
     doc.save(output_path)
     print("Report generated successfully at:", output_path)
 
 if __name__ == "__main__":
     build_document()
+
