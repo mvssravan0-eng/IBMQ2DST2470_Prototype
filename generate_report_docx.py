@@ -1016,9 +1016,13 @@ else:
     for sec in doc.sections:
         add_page_borders(sec)
 
-    output_path = os.path.join(base_dir, "IBMQ2DST2470_Internship_Case_Study_Report.docx")
+    output_path = os.path.join(base_dir, "IBMQ2DST2470_Case_Study_Report.docx")
     doc.save(output_path)
     print("Report generated successfully at:", output_path)
+    try:
+        doc.save(os.path.join(base_dir, "IBMQ2DST2470_Internship_Case_Study_Report.docx"))
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     build_document()
