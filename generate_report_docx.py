@@ -105,17 +105,17 @@ def build_document():
     run.font.size = Pt(13)
     run.bold = True
 
-    logo_path = os.path.join(base_dir, "anits_logo_colored.png")
+    logo_path = os.path.join(base_dir, "anits_silver_jubilee_logo.png")
     if os.path.exists(logo_path):
         p_logo = doc.add_paragraph()
         p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_logo.paragraph_format.space_before = Pt(10)
-        p_logo.paragraph_format.space_after = Pt(15)
-        p_logo.add_run().add_picture(logo_path, width=Inches(1.7))
+        p_logo.paragraph_format.space_before = Pt(8)
+        p_logo.paragraph_format.space_after = Pt(12)
+        p_logo.add_run().add_picture(logo_path, width=Inches(1.8))
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(10)
+    p.paragraph_format.space_before = Pt(8)
     p.paragraph_format.space_after = Pt(4)
     run = p.add_run("DEPARTMENT OF CSE (AI & ML)\n")
     run.font.name = 'Times New Roman'
@@ -173,13 +173,13 @@ def build_document():
     if os.path.exists(logo_path):
         p_logo2 = doc.add_paragraph()
         p_logo2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_logo2.paragraph_format.space_before = Pt(8)
-        p_logo2.paragraph_format.space_after = Pt(12)
-        p_logo2.add_run().add_picture(logo_path, width=Inches(1.5))
+        p_logo2.paragraph_format.space_before = Pt(6)
+        p_logo2.paragraph_format.space_after = Pt(10)
+        p_logo2.add_run().add_picture(logo_path, width=Inches(1.35))
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_after = Pt(20)
+    p.paragraph_format.space_after = Pt(16)
     run = p.add_run("BONAFIDE CERTIFICATE")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(14)
@@ -187,7 +187,7 @@ def build_document():
 
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.3
-    p.paragraph_format.space_after = Pt(36)
+    p.paragraph_format.space_after = Pt(20)
     run = p.add_run("This is to certify that this Internship Report ")
     run.font.name = 'Times New Roman'
     run.font.size = Pt(12)
@@ -246,7 +246,7 @@ def build_document():
     # HOD section
     p_hod = doc.add_paragraph()
     p_hod.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_hod.paragraph_format.space_before = Pt(40)
+    p_hod.paragraph_format.space_before = Pt(20)
     p_hod.paragraph_format.line_spacing = 1.15
     p_hod.add_run("Head Of the Department\n\n\n").bold = True
     p_hod.add_run("DR. K. SELVANI DEEPTHI\n").bold = True
