@@ -46,6 +46,21 @@ def add_styled_code_block(doc, code_text):
     run.font.color.rgb = RGBColor(220, 220, 220)
     doc.add_paragraph()
 
+def add_page_borders(section):
+    sectPr = section._sectPr
+    for child in list(sectPr):
+        if child.tag.endswith('pgBorders'):
+            sectPr.remove(child)
+    borders_xml = parse_xml(
+        f'<w:pgBorders {nsdecls("w")} w:offsetFrom="page">'
+        r'<w:top w:val="single" w:sz="12" w:space="24" w:color="000000"/>'
+        r'<w:left w:val="single" w:sz="12" w:space="24" w:color="000000"/>'
+        r'<w:bottom w:val="single" w:sz="12" w:space="24" w:color="000000"/>'
+        r'<w:right w:val="single" w:sz="12" w:space="24" w:color="000000"/>'
+        r'</w:pgBorders>'
+    )
+    sectPr.append(borders_xml)
+
 def build_document():
     doc = docx.Document()
     
@@ -55,6 +70,7 @@ def build_document():
         sec.bottom_margin = Inches(1.0)
         sec.left_margin = Inches(1.0)
         sec.right_margin = Inches(1.0)
+        add_page_borders(sec)
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     plots_dir = os.path.join(base_dir, "outputs", "plots")
@@ -996,6 +1012,9 @@ else:
         p_cert.paragraph_format.space_before = Pt(8)
         p_cert.paragraph_format.space_after = Pt(8)
         p_cert.add_run().add_picture(cert_path, width=Inches(6.2))
+
+    for sec in doc.sections:
+        add_page_borders(sec)
 
     output_path = os.path.join(base_dir, "IBMQ2DST2470_Internship_Case_Study_Report.docx")
     doc.save(output_path)
