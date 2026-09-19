@@ -39,10 +39,9 @@ CUSTOM_CSS = """
         font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Main Container background subtle grid */
+    /* Main Container background */
     .main {
-        background-image: radial-gradient(rgba(15, 98, 254, 0.05) 1px, transparent 0);
-        background-size: 24px 24px;
+        background-color: #0F172A;
     }
 
     /* Hero Header */
@@ -202,10 +201,6 @@ def main():
     """, unsafe_allow_html=True)
 
     st.sidebar.markdown("""
-    **Developer:** V S Sravan Malladi  
-    **Roll No:** `A24126552268`  
-    **IBM ID:** `IBMQ2DST2470`  
-    **College:** ANITS (CSE - AI & ML)  
     ---
     """)
 
