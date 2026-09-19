@@ -393,9 +393,9 @@ def main():
             ax.xaxis.label.set_color("#94A3B8")
             ax.yaxis.label.set_color("#94A3B8")
             for spine in ax.spines.values():
-                spine.set_color("rgba(255, 255, 255, 0.1)")
+                spine.set_color("#334155")
             
-            ax.legend(facecolor="#121824", edgecolor="rgba(255, 255, 255, 0.1)", labelcolor="#F8FAFC", loc="lower right")
+            ax.legend(facecolor="#121824", edgecolor="#334155", labelcolor="#F8FAFC", loc="lower right")
             plt.tight_layout()
             st.pyplot(fig)
             plt.close()
